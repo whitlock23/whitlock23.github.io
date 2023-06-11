@@ -25,8 +25,10 @@ a {
 }
 abbr[title] {
   border-bottom: none /* 1 */;
-  text-decoration: underline /* 2 */;
-  text-decoration: underline dotted /* 2 */;
+  -webkit-text-decoration: underline /* 2 */;
+          text-decoration: underline /* 2 */;
+  -webkit-text-decoration: underline dotted /* 2 */;
+          text-decoration: underline dotted /* 2 */;
 }
 b,
 strong {
@@ -151,7 +153,9 @@ template {
 html,
 body {
   height: 100%;
-  text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+          text-size-adjust: 100%;
 }
 html {
   font-size: 62.5%;
@@ -1336,7 +1340,9 @@ code {
 .highlight table .gutter {
   text-align: right;
   color: #6c757d !important;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 .highlight figcaption {
   padding: 0.5rem 1rem;
@@ -1449,39 +1455,6 @@ code {
   transform: translate(-50%, -50%);
   min-width: 100%;
   max-height: 100%;
-}
-@-moz-keyframes twinkling {
-  0% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.25;
-  }
-}
-@-webkit-keyframes twinkling {
-  0% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.25;
-  }
-}
-@-o-keyframes twinkling {
-  0% {
-    opacity: 0.25;
-  }
-  50% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.25;
-  }
 }
 @keyframes twinkling {
   0% {
@@ -2295,7 +2268,6 @@ code {
   box-shadow: 0 1rem 3rem rgba(33,37,41,0.125);
 }
 .filter-gray {
-  -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -o-filter: grayscale(100%);
   filter: grayscale(100%);
