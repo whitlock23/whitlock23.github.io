@@ -231,14 +231,14 @@ abbr {
   border-bottom: 1px dotted;
 }
 a {
-  color: #fff;
+  color: #1e90ff;
   text-decoration: none;
 }
 a:hover {
-  color: #fff;
+  color: #359bff;
 }
 a:active {
-  color: #e6e6e6;
+  color: #0182ff;
 }
 a.disabled {
   color: #6c757d;
@@ -294,17 +294,17 @@ h6,
   font-weight: lighter;
 }
 .text-primary {
-  color: #fff !important;
+  color: #1e90ff !important;
 }
 .bg-primary {
-  background-color: #fff !important;
+  background-color: #1e90ff !important;
 }
 .btn-primary {
-  background-color: #fff;
-  border-color: #fff;
+  background-color: #1e90ff;
+  border-color: #1e90ff;
 }
 .btn-primary:hover {
-  background-color: #fff;
+  background-color: #359bff;
 }
 .text-secondary {
   color: #ffa502 !important;
